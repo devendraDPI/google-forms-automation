@@ -32,5 +32,7 @@ This project involves automating a google form, end-to-end, with a variety of di
 
 # Screenshots
 ![Google Form](screenshots/Screenshot20241002092126.png)
+> Google form
 
 ![gradle build, run](screenshots/Screenshot20241002085040.png)
+> Gradle build, gradle run
