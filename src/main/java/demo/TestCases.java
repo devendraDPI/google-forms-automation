@@ -199,8 +199,8 @@ public class TestCases {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'Choose')]")));
             driver.findElement(By.xpath("//span[contains(text(), 'Choose')]")).click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@role='option']//span[text()='Mr']/..")));
-            driver.findElement(By.xpath("//div[@role='option']//span[text()='Mr']/..")).click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@role='option']//span[text()='"+ title +"']/..")));
+            driver.findElement(By.xpath("//div[@role='option']//span[text()='"+ title +"']/..")).click();
             logStatus("selectOptionDropdown: SUCCESS", title);
         } catch (Exception e) {
             logStatus("selectOptionDropdown: FAILURE", title +"\n"+ e.getMessage());
